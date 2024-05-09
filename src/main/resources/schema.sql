@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS client_credentials(
+      id INT PRIMARY KEY NOT NULL,
+      user_id INT NOT NULL,
+      api_key VARCHAR(200) NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
